@@ -18,9 +18,6 @@ Robbyant Team
 
 </div>
 
-> **TL;DR.** LingBot-Map is a feed-forward 3D foundation model for **streaming 3D reconstruction**: given a video stream, it predicts camera poses and dense point clouds online. It is built on the **Geometric Context Transformer (GCT)**, whose attention combines an *anchor context* (coordinate grounding), a *pose-reference window* (dense geometric cues) and a *trajectory memory* (long-range drift correction). It runs at ~20 FPS at 518×378 on sequences of more than 10,000 frames, and outperforms existing streaming and optimization-based methods. It is evaluated on Oxford Spires, KITTI, VBR, Droid-W, TUM, 7-Scenes, ETH3D, Tanks and Temples and NRGBD.
->
-> **Paper:** Chen et al., *Geometric Context Transformer for Streaming 3D Reconstruction*, ECCV 2026 · **Tech report:** [arXiv:2604.14141](https://arxiv.org/abs/2604.14141) · **Code:** https://github.com/robbyant/lingbot-map · **Cite:** see [Citation](#-citation)
 
 https://github.com/user-attachments/assets/fe39e095-af2c-4ec9-b68d-a8ba97e505ab
 
