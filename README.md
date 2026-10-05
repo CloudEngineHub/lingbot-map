@@ -10,13 +10,17 @@ Robbyant Team
 <div align="center">
 
 [![Conference Version Paper](https://img.shields.io/static/v1?label=Conference%20Version&message=Paper&color=blue)](https://linzhuo.xyz/gct.pdf)
-[![Technical Report Version Paper](https://img.shields.io/static/v1?label=Technical%20Report%20Version&message=Paper&color=red)](lingbot-map_paper.pdf)
+[![Technical Report Version Paper](https://img.shields.io/static/v1?label=Technical%20Report%20Version&message=arXiv&color=red)](https://arxiv.org/abs/2604.14141)
 [![Project](https://img.shields.io/badge/Project-Website-blue)](https://technology.robbyant.com/lingbot-map)
 [![HuggingFace](https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Model&message=HuggingFace&color=orange)](https://huggingface.co/robbyant/lingbot-map)
 [![ModelScope](https://img.shields.io/static/v1?label=%F0%9F%A4%96%20Model&message=ModelScope&color=purple)](https://www.modelscope.cn/models/Robbyant/lingbot-map)
 [![License](https://img.shields.io/badge/License-Apache--2.0-green)](LICENSE.txt)
 
 </div>
+
+> **TL;DR.** LingBot-Map is a feed-forward 3D foundation model for **streaming 3D reconstruction**: given a video stream, it predicts camera poses and dense point clouds online. It is built on the **Geometric Context Transformer (GCT)**, whose attention combines an *anchor context* (coordinate grounding), a *pose-reference window* (dense geometric cues) and a *trajectory memory* (long-range drift correction). It runs at ~20 FPS at 518×378 on sequences of more than 10,000 frames, and outperforms existing streaming and optimization-based methods. It is evaluated on Oxford Spires, KITTI, VBR, Droid-W, TUM, 7-Scenes, ETH3D, Tanks and Temples and NRGBD.
+>
+> **Paper:** Chen et al., *Geometric Context Transformer for Streaming 3D Reconstruction*, ECCV 2026 · **Tech report:** [arXiv:2604.14141](https://arxiv.org/abs/2604.14141) · **Code:** https://github.com/robbyant/lingbot-map · **Cite:** see [Citation](#-citation)
 
 https://github.com/user-attachments/assets/fe39e095-af2c-4ec9-b68d-a8ba97e505ab
 
@@ -594,14 +598,29 @@ This project is released under the Apache License 2.0. See [LICENSE](LICENSE.txt
 
 ## 📖 Citation
 
+If you use LingBot-Map in your research, please cite the ECCV 2026 paper:
+
+> Lin-Zhuo Chen, Jian Gao, Shangzhan Zhang, Yihang Chen, Nan Xue, Jianyuan Wang, Christian Rupprecht, Xun Cao, Xing Zhu, Yujun Shen, Yao Yao, and Yinghao Xu. **Geometric Context Transformer for Streaming 3D Reconstruction.** In *European Conference on Computer Vision (ECCV)*, pages 293–314. Springer, 2026.
+
 ```bibtex
 @inproceedings{chen2026geometric,
-  title={Geometric context transformer for streaming 3d reconstruction},
-  author={Chen, Lin-Zhuo and Gao, Jian and Zhang, Shangzhan and Chen, Yihang and Xue, Nan and Wang, Jianyuan and Rupprecht, Christian and Cao, Xun and Zhu, Xing and Shen, Yujun and others},
-  booktitle={European Conference on Computer Vision},
-  pages={293--314},
-  year={2026},
-  organization={Springer}
+  title     = {Geometric Context Transformer for Streaming {3D} Reconstruction},
+  author    = {Chen, Lin-Zhuo and Gao, Jian and Zhang, Shangzhan and Chen, Yihang and Xue, Nan and Wang, Jianyuan and Rupprecht, Christian and Cao, Xun and Zhu, Xing and Shen, Yujun and Yao, Yao and Xu, Yinghao},
+  booktitle = {European Conference on Computer Vision (ECCV)},
+  pages     = {293--314},
+  year      = {2026},
+  publisher = {Springer}
+}
+```
+
+The extended technical report (LingBot-Map) can be cited as:
+
+```bibtex
+@article{chen2026lingbotmap,
+  title   = {{LingBot-Map}: Geometric Context Transformer for Streaming {3D} Reconstruction},
+  author  = {Chen, Lin-Zhuo and Gao, Jian and Zhang, Shangzhan and Chen, Yihang and Cheng, Ka Leong and Sun, Yipengjing and Hu, Liangxiao and Xue, Nan and Zhu, Xing and Shen, Yujun and Yao, Yao and Xu, Yinghao},
+  journal = {arXiv preprint arXiv:2604.14141},
+  year    = {2026}
 }
 ```
 
