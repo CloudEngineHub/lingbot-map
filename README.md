@@ -595,11 +595,13 @@ This project is released under the Apache License 2.0. See [LICENSE](LICENSE.txt
 ## 📖 Citation
 
 ```bibtex
-@article{chen2026geometric,
-  title={Geometric Context Transformer for Streaming 3D Reconstruction},
-  author={Chen, Lin-Zhuo and Gao, Jian and Chen, Yihang and Cheng, Ka Leong and Sun, Yipengjing and Hu, Liangxiao and Xue, Nan and Zhu, Xing and Shen, Yujun and Yao, Yao and Xu, Yinghao},
-  journal={arXiv preprint arXiv:2604.14141},
-  year={2026}
+@inproceedings{chen2026geometric,
+  title={Geometric context transformer for streaming 3d reconstruction},
+  author={Chen, Lin-Zhuo and Gao, Jian and Zhang, Shangzhan and Chen, Yihang and Xue, Nan and Wang, Jianyuan and Rupprecht, Christian and Cao, Xun and Zhu, Xing and Shen, Yujun and others},
+  booktitle={European Conference on Computer Vision},
+  pages={293--314},
+  year={2026},
+  organization={Springer}
 }
 ```
 
