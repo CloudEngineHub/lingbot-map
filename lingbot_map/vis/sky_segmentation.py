@@ -24,7 +24,8 @@ except ImportError:
 
 
 _SKYSEG_INPUT_SIZE = (320, 320)
-_SKYSEG_SOFT_THRESHOLD = 0.1
+# Non-sky confidence threshold; > 0.875 keeps raw skyseg scores < 32/255, matching VGGT.
+_SKYSEG_SOFT_THRESHOLD = 0.875
 _SKYSEG_CACHE_VERSION = "imagenet_norm_softmap_inverted_v4"
 _SKYSEG_MODEL_URL = "https://huggingface.co/JianyuanWang/skyseg/resolve/main/skyseg.onnx"
 
